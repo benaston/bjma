@@ -63,7 +63,7 @@
 #intro-header h1,
 #wizerati-header h1,
 #icis-live-header h1,
-#justtextgiving h1 {
+#justtextgiving-header h1 {
     margin: 0;
 }
 
@@ -74,7 +74,9 @@
     line-height: 2rem;
 }
 
-#wizerati-header {
+#wizerati-header,
+#icis-live-header,
+#justtextgiving-header {
     margin: 0 0 20px 0;
 }
 
