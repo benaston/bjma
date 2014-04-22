@@ -5,8 +5,7 @@
     <meta name="author" content="Ben Aston">
     <meta name="build" content="@@build">
     <style>@@css</style>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi, minimal-ui">
 </head>
 <body>
 <div id="main-container">
@@ -24,17 +23,15 @@
                 <div id="intro-body">
                     <p>Hi there! I'm Ben Aston, and I am a technologist based in London with an obsession with the Web and single-page web applications.</p>
 
-                    <p>For examples of my .NET work, <a href="https://github.com/benaston/NState">NState</a> and <a
-                                href="https://github.com/benaston/NFeature">NFeature</a> can be found on both <a href="https://github.com/benaston">GitHub</a> and
-                        <a href="http://nuget.org/profiles/benaston">NuGet</a>. An
-                        implementation of the distributed election "bully" algorithm can be found <a
-                                href="https://github.com/benaston/Taskr">here</a>.</p>
+                    <p>Examples of my .NET work, <a href="https://github.com/benaston/NState">NState</a> and <a href="https://github.com/benaston/NFeature">NFeature</a> can be found on both <a href="https://github.com/benaston">GitHub</a> and
+                        <a href="http://nuget.org/profiles/benaston">NuGet</a>. An implementation in C# of the distributed election "bully" algorithm can be found <a href="https://github.com/benaston/Taskr">here</a>.</p>
+
                     <p>For JavaScript, my current pet-project <a href="https://github.com/benaston/w">Wizerati</a>, a work-in-progress single-page web application
-                        can be
-                        found online <a href="http://www.wizerati.com">here</a>.</p>
-                    <p>I am available for ad-hoc consultancy &amp; agile coaching.</p>
-                    <p>My email is ben@bj.ma.</p>
-                    <p>Scroll down for more information.</p>
+                        can be found online <a href="http://www.wizerati.com">here</a>.</p>
+
+                    <p>I am available for ad-hoc consultancy &amp; agile coaching. If you'd like to get in touch, my email is ben@bj.ma.</p>
+
+                    <p>Further details on some of the projects I have delivered can be found below.</p>
                     <div id="down-arrow">&#xf103;</div>
                 </div>
 
@@ -50,30 +47,33 @@
                     <p>This application is nothing if not fast and efficient. Superfluous information is absent and
                         the user interface plays only a supporting role to the information the user needs.</p>
 
-                    <p>The spartan homepage embodies this philosophy. Running a search is achievable using either the
-                        mouse and keyboard or the keyboard alone.</p>
+                    <p>The spartan homepage embodies this philosophy, having evolved into its present form after user testing tens of different iterations.
+                        The resulting interface relies on stark minimalism for impact rather than flashy logos, effects or complicated features - and its form feels inevitable. Indeed this is my personal definition of a high quality user interface - it "feels inevitable". Watching users operate such an interface is great fun - and is conspicuous by the absence of pauses and questions - they know almost intuitively what to do - but achieving this level of usability takes a great deal of effort.
+                    </p>
                     <figure id="wizerati-figure-1" class="clear-both" >
                         <img id="wizerati-img-1" src="images/wiz1.png"/>
                         <figcaption>The homepage embodies minimalism.</figcaption>
                     </figure>
-                    <p>This application uses a number techniques to achieve
-                        high-levels of responsiveness. The entire web application - CSS, JavaScript and markup - is
-                        downloaded in a single HTTP response minimising the wait times typically associated with
-                        high-latency networks (such as mobile networks).</p>
+                    <p>Web applications have a reputation for being more sluggish than their native counterparts. This application attempts to buck that trend. The entire web application - CSS, JavaScript and markup - is
+                        delivered in a single compressed HTTP response (or two responses in the currently deployed developmental version for debugging reasons). The application uses a single image (excluding images in search results) - an SVG for the logo - and even this is encoded directly into the page.
+                        The result is an application that loads (under optimal network conditions) in under one second - and is significantly quicker to load on high latency networks.
+                    </p>
                     <figure id="wizerati-figure-4" class="clear-both" >
                         <img id="wizerati-img-4" src="images/wiz5.png"/>
                         <figcaption>Additional affordances on touch-based devices reduce perceived latency.</figcaption>
                     </figure>
                     <p>
-                        On touch-based devices a "halo" effect is used to confirm the selection of on-screen items,
-                        avoiding doubt about button presses and reducing perceived latency - particularly on iOS devices with their enforced 300ms delay.</p>
-
-                    <p>The user interface is responsive to changes in screen width and device orientation. Screen utilisation is maximised on both small- and large-screen devices.</p>
+                        Perceived responsiveness can be just as important as the reality. On touch-based devices a "halo" effect is added to confirm the selection of on-screen items,
+                        and avoid doubt about button presses. Importantly this also significantly reduces the perceived latency on devices that have unavoidable delays on 'click' events in web applications.</p>
+                    <figure id="wizerati-figure-2" class="clear-both" >
+                        <img id="wizerati-img-2" src="images/wiz3.png"/>
+                        <figcaption>The user interface is responsive to screen dimensions - both small...</figcaption>
+                    </figure>
+                    <p>Inside the application, clicking or touching a search result updates the screen much faster than would normally be possible thanks to a combination of local caching and the use of DOM element double-buffering. Finally, as far as possible changes in position and opacity are controlled using hardware-accelerated CSS3 filters and transforms providing the smoothest possible user experience.</p>
                     <figure id="wizerati-figure-2" class="clear-both" >
                         <img id="wizerati-img-2" src="images/wiz2.png"/>
-                        <figcaption>The user interface is responsive to screen dimensions.</figcaption>
+                        <figcaption>...and large.</figcaption>
                     </figure>
-                    <p>Inside the application, clicking or touching a search result updates the screen impossibly fast due to a combination of local caching and the use of DOM element double-buffering. Changes in position and opacity are controller using CSS3 filters and transforms enabling hardware acceleration to provide the smoothest possible experience for the user.</p>
                 </div>
             </div>
         </section><section id="icis-live">
