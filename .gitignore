@@ -3,4 +3,4 @@
 public/javascripts/wizerati.*
 public/stylesheets/wizerati.*
 view-templates/_*.ejs
-views/*.ejs
+
