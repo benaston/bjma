@@ -19,17 +19,19 @@
     font-style: normal;
 }
 
-#intro::after {
+#intro::after,
+#wizerati::after,
+#icis-live::after,
+#justtextgiving::after {
     display: block;
     content: '';
     clear: both;
 }
 
 #intro, #wizerati, #icis-live, #justtextgiving {
-    padding: 40px;
+    padding: 40px 0 40px 0;
     box-sizing: border-box;
     min-height: 650px;
-
 }
 
 #intro {
@@ -96,7 +98,7 @@
     padding-left: 60px;
 }
 
-p {
+p:not(:last-of-type) {
     margin-bottom: 10px;
 }
 
@@ -163,7 +165,9 @@ p {
     clear: both;
 }
 
-#wizerati-body p:before {
+#wizerati-body p:before,
+#icis-live-body p:before,
+#justtextgiving-body p:before {
     content: "";
     width: 200px;
     display: block;
@@ -185,7 +189,7 @@ body {
 
 @media only screen and (max-device-width: 568px) {
     body {
-        min-width: 420px;
+        min-width: 320px;
     }
 
     #intro-header {
@@ -212,6 +216,10 @@ body {
     }
 
     #intro, #wizerati, #icis-live, #justtextgiving {
-        padding: 40px 0 0 0;
+        padding: 40px 0 40px 0;
+    }
+
+    .starburst {
+        display: none;
     }
 }
