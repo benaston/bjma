@@ -32,6 +32,8 @@ module.exports = function (grunt) {
               'public/stylesheets/vendor/lucid-style-buttons.css',
               'public/stylesheets/vendor/lucid-style-form-elements.css',
               'public/stylesheets/vendor/cube.css',
+              'public/stylesheets/vendor/animation.css',
+              'public/stylesheets/vendor/starburst.css',
               'public/stylesheets/application/*.css',
             ],
             dest: 'public/stylesheets/<%= pkg.name %>.css'
