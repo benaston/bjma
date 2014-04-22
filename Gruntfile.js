@@ -97,12 +97,6 @@ module.exports = function (grunt) {
               {
                 match: 'footer',
                 replacement: '<%= grunt.file.read("public/template-server/shared/templates/footer.html") %>'
-              },{
-                match: 'no-script',
-                replacement: '<%= grunt.file.read("public/template-server/shared/templates/no-script.html") %>'
-              },{
-                match: 'no-compatibility',
-                replacement: '<%= grunt.file.read("public/template-server/shared/templates/no-compatibility.html") %>'
               }
             ]
           },
