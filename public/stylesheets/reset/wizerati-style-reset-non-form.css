@@ -63,6 +63,10 @@ em {
     font-style: italic;
 }
 
+figcaption {
+    font-style: italic;
+}
+
 form {
     display: inline-block;
 }

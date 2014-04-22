@@ -5,15 +5,120 @@
     <meta name="author" content="Ben Aston">
     <meta name="build" content="@@build">
     <style>@@css</style>
-    <noscript><link rel="stylesheet" type="text/css" href="stylesheets/no-script.css"></noscript>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi, minimal-ui">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="stylesheets/no-script.css">
+    </noscript>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 </head>
-<body data-ui-mode="-1" data-are-transitions-enabled="false" data-modal="-1" data-hover-is-enabled="true" data-is-mobile-device="false">
+<body>
 <div id="main-container" data-visibility-mode="1">
-    <header></header>
-    <main></main>
+    <main>
+        <section id="intro">
+            <div id="intro-content">
+                <header id="intro-header">
+                    <h1>Ben Aston</h1>
+                    <div id="sub-heading">Web Technologist</div>
+                </header>
+                <div id="intro-body">
+                    <p>Hi there! I'm Ben Aston, and my professional passion is single-page web applications.</p>
+
+                    <p>For examples of my .NET work, <a href="https://github.com/benaston/NState">NState</a> and <a
+                                href="https://github.com/benaston/NFeature">NFeature</a> can be found on both <a href="https://github.com/benaston">GitHub</a> and
+                        <a href="http://nuget.org/profiles/benaston">NuGet</a>. An
+                        implementation of the distributed election "bully" algorithm can be found <a
+                                href="https://github.com/benaston/Taskr">here</a>.</p>
+                    <p>For JavaScript, my current pet-project <a href="https://github.com/benaston/w">Wizerati</a>, a work-in-progress single-page web application
+                        can be
+                        found online <a href="http://www.wizerati.com">here</a>.</p>
+                    <p>I am available for ad-hoc consultancy &amp; agile coaching.</p>
+                    <p>My email is ben@bj.ma.</p>
+                    <p>Scroll down for more information.</p>
+                    <div id="down-arrow">&#xf103;</div>
+                </div>
+
+            </div>
+        </section>
+        <section id="wizerati">
+            <div id="wizerati-content">
+                <header id="wizerati-header">
+                    <h1>Wizerati</h1>
+                    <p>A search engine for IT contracts and contractors.</p>
+                </header>
+                <div id="wizerati-body" class="clear-both">
+                    <p>This application is nothing if not fast and efficient. Superfluous information is absent and
+                        the user interface plays only a supporting role to the information the user needs.</p>
+
+                    <p>The spartan homepage embodies this philosophy. Running a search is achievable using either the
+                        mouse and keyboard or the keyboard alone.</p>
+                    <figure id="wizerati-figure-1" class="clear-both" >
+                        <img id="wizerati-img-1" src="images/wiz1.png"/>
+                        <figcaption>The homepage; "perfection is achieved not when there is nothing more to add, but when there is nothing left to take away".</figcaption>
+                    </figure>
+                    <p>This application uses a variety of cutting-edge techniques to achieve
+                        incredible responsiveness. The entire web application - CSS, JavaScript and markup - is
+                        downloaded in a single HTTP response minimising the wait times typically associated with
+                        high-latency networks (such as mobile networks).</p>
+                    <figure id="wizerati-figure-4" class="clear-both" >
+                        <img id="wizerati-img-4" src="images/wiz5.png"/>
+                        <figcaption>Additional affordances on touch-based devices reduce perceived latency.</figcaption>
+                    </figure>
+                    <p>
+                        On touch-based devices a "halo" effect is used to confirm the selection of on-screen items,
+                        avoiding doubt about button presses and reducing perceived latency - particularly on iOS devices with their enforced 300ms delay.</p>
+
+                    <p>The user interface is responsive to changes in screen width and device orientation. Screen utilisation is maximised on both small- and large-screen devices.</p>
+                    <figure id="wizerati-figure-2" class="clear-both" >
+                        <img id="wizerati-img-2" src="images/wiz2.png"/>
+                        <figcaption>The user interface changes to fit the device.</figcaption>
+                    </figure>
+                    <p>Inside the application, clicking or touching a search result updates the screen impossibly fast due to a combination of local caching and the use of DOM element double-buffering. Changes in position and opacity are controller using CSS3 filters and transforms enabling hardware acceleration to provide the smoothest possible experience for the user.</p>
+                </div>
+            </div>
+        </section>
+        <section id="icis-live">
+            <div id="icis-live-content">
+                <header id="icis-live-header">
+                    <h1>ICIS Live</h1>
+                    <p>Real-time price alerts.</p>
+                </header>
+                <div id="wizerati-body" class="clear-both">
+                    <p>I designed and developed ICIS Live last year. With an interface
+                        reminiscent of a chat application, ICIS Live enables real-time communication with customers.
+                    </p>
+
+                    <figure id="icis-live-figure-1" class="clear-both" >
+                        <img id="icis-live-img-1" src="images/icis-live-1.png"/>
+                        <figcaption>ICIS Live provides real-time commodity pricing updates using web sockets.</figcaption>
+                    </figure>
+                    <p>The interface here was built using HTML5 flex-box to guarantee the message field remains in the
+                        view-port. URL
+                        fragment identifiers are used to ensure the chat history position remains correct for
+                        users without JavaScript.</p>
+
+                </div>
+            </div>
+        </section>
+        <section id="justtextgiving">
+            <div id="justtextgiving-content">
+                <header id="justtextgiving-header">
+                    <h1>Vodafone JustTextGiving</h1>
+                    <p>Online and SMS-based charitable donations.</p>
+                </header>
+                <div id="wizerati-body" class="clear-both">
+                    <p>As part of a small team, I developed JustTextGiving, a partnership between JustGiving and
+                        Vodafone.
+                    </p>
+                    <figure id="icis-live-figure-1" class="clear-both" >
+                        <img id="icis-live-img-1" src="images/justtextgiving-1.png"/>
+                        <figcaption>Vodafone JustTextGiving brings SMS-based charitable donations to charities of all sizes.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="f">@@footer</footer>
 </div>
 @@no-script
