@@ -107,7 +107,7 @@ module.exports = function (grunt) {
             ]
           },
           files: [
-            {src: ['view-templates/_index-build-injected.ejs'], dest: 'view-templates/_index-in-page-templates-injected.ejs'}
+            {src: ['view-templates/_index-build-injected.ejs'], dest: 'views/index.ejs'}
           ]},
           injectScriptTagForDebugging: {
             options: {
@@ -182,10 +182,7 @@ module.exports = function (grunt) {
     'cssmin',
     'replace:injectCssIntoHead',
     'replace:injectBuildNumber',
-    'replace:injectInPageTemplates',
-    'replace:injectScriptTagForDebugging',
-    'replace:injectJavaScriptIntoBody',
-    'replace:injectJavaScriptIntoBody'
+    'replace:injectInPageTemplates'
   ]);
 }
 ;
