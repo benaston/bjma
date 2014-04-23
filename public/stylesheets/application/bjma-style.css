@@ -56,6 +56,28 @@
     color: #222;
 }
 
+#footer {
+    background: rgba(38, 38, 38, 1);
+    color: #ddd;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+#footer-title-and-byline-container {
+    float: left;
+    width: 300px;
+}
+
+#footer-link-container {
+    height: 100%;
+    float: right;
+}
+
+#footer a {
+    color: #ddd;
+}
+
 #intro-header {
     float: left;
     width: 50%;
