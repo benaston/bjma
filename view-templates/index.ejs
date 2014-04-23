@@ -73,7 +73,9 @@
                         <figcaption>...and large.</figcaption>
                     </figure>
                     <p>Having run a search, clicking or touching a result updates the screen at near native performance thanks to a combination of client-side caching and the use of DOM element double-buffering. Finally - as far as is possible - changes in position and opacity are controlled using hardware-accelerated CSS3 filters and transforms, providing the best possible chance of a sixty frames-per-second user experience.</p>
-
+                    <p>One of Wizerati's discriminating features is the ability to trivially compare results side-by-side. Take a look at the following video to see how this is achieved:
+                    </p>
+                    <video id="demo-video" controls="controls" width="400" name="Wizerati result comparison demonstration" src="/movies/wiz.mov"></video>
                 </div>
             </div>
         </section><section id="icis-live">
@@ -90,8 +92,9 @@
                         <img id="icis-live-img-1" src="images/icis-live-1.png"/>
                         <figcaption>ICIS Live provides real-time commodity pricing updates using web sockets.</figcaption>
                     </figure>
-                    <p>The interface here was built using an HTML5 flex-box layout to guarantee the message field remained in the
-                        view-port. URL fragment identifiers were used to ensure the chat history position remained correct when sending messages.</p>
+                    <p>The interface for ICIS Live was built using an HTML5 flex-box layout to guarantee the message field remained in the
+                        view-port regardless of window size. A text-based filter function enabled users to rapidly find the correct "channel" associated with the relevant commodity to communicate from. URL fragment identifiers are used to ensure the chat history position remained correct when sending messages.</p>
+                    <p>Behind the scenes, messages are delivered instantly to around twenty-thousand subscribers using a TCP socket cloud.</p>
                 </div>
             </div>
         </section><section id="justtextgiving">
@@ -101,13 +104,14 @@
                     <p>Online and SMS-based charitable donations.</p>
                 </header>
                 <div id="justtextgiving-body" class="clear-both">
-                    <p>As part of a small team, I developed JustTextGiving, a partnership between JustGiving and
-                        Vodafone.
+                    <p>JustTextGiving, a partnership between JustGiving and
+                        Vodafone, enables charitable organisations and members of the general public on behalf of a nominated charity, to accept charitable donations via text message. Users register a code with JustGiving via a web interface. Donations can then be made by sending the code together with an amount (e.g. £5) in an SMS to a five-digit donation number. The donation is then added to the donor's telephone bill.
                     </p>
                     <figure id="justtextgiving-figure-1" class="clear-both" >
                         <img id="icis-live-img-1" src="images/justtextgiving-1.png"/>
                         <figcaption>Vodafone JustTextGiving brings SMS-based charitable donations to charities of all sizes.</figcaption>
                     </figure>
+                    <p>JustTextGiving has made charitable donations faster and simpler, helping thousands of charities raise money for good causes.</p>
                 </div>
             </div>
         </section>
