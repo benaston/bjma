@@ -42,14 +42,13 @@
 }
 
 #wizerati, #header {
-    background: rgba(0, 158, 225, 1)
-    /*background: rgba(138, 203, 235, 1);*/
-    /*color: #000;*/
+    background: rgba(0, 158, 225, 1);
+    color: #222;
 }
 
 #icis-live {
-    /*background: rgba(255, 132, 22, 1);*/
     background: rgba(246, 144, 43, 1);
+    color: #222;
 }
 
 #justtextgiving {
