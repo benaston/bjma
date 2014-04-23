@@ -70,7 +70,6 @@
 }
 
 #footer-link-container {
-    height: 100%;
     float: right;
 }
 
@@ -163,13 +162,8 @@ p:not(:last-of-type) {
     width: 100%;
 }
 
-#icis-live-figure-1 {
-    float: left;
-    width: 50%;
-    margin: 30px;
-}
-
-#wizerati-figure-2 {
+#icis-live-figure-1,
+#justtextgiving-figure-1 {
     float: left;
     width: 50%;
     margin: 30px;
@@ -182,14 +176,15 @@ p:not(:last-of-type) {
     margin: 30px;
 }
 
-#wizerati-figure-4 {
+#wizerati-figure-2 {
     float: right;
     width: 40%;
     max-width: 300px;
     margin: 30px;
 }
 
-#wizerati-figure-6 {
+#wizerati-figure-3,
+#wizerati-figure-4 {
     float: left;
     width: 50%;
     margin: 30px;
@@ -278,5 +273,25 @@ body {
 
     .starburst {
         display: none;
+    }
+
+    #footer {
+        height: 300px;
+        padding: 20px;
+    }
+
+    #footer-title-and-byline-container {
+        width: 150px;
+        margin-bottom: 40px
+    }
+
+    #wizerati-figure-1,
+    #wizerati-figure-2,
+    #wizerati-figure-3,
+    #wizerati-figure-4,
+    #icis-live-figure-1,
+    #justtextgiving-figure-1 {
+        width: 100%;
+        margin: 30px 0 30px 0;
     }
 }
