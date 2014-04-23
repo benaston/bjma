@@ -229,7 +229,8 @@ p:not(:last-of-type) {
 
 #down-arrow {
     font-family: ionicons;
-    font-size: 2rem;
+    font-size: 5rem;
+    opacity: .2;
 }
 
 body {
