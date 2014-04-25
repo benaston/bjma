@@ -28,6 +28,10 @@
     clear: both;
 }
 
+img {
+    border: 2px solid black;
+}
+
 #intro,
 #wizerati,
 #icis-live,
@@ -144,7 +148,7 @@
     width: 80%;
     margin: auto;
     max-width: 900px;
-    padding: 80px 0;
+    padding: 80px 0 95px 0;
 
 }
 
@@ -245,6 +249,7 @@ body {
     float: left;
     margin-top:20px;
     width: 400px;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-device-width: 568px) {
