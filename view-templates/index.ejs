@@ -45,33 +45,29 @@
                 </header>
                 <div id="wizerati-body" class="clear-both">
                     <p>This work-in-progress application aims to be fast and efficient to use. The user interface avoids distraction and supports the information the user needs.</p>
-                    <figure id="wizerati-figure-1" class="clear-both" >
-                        <img id="wizerati-img-1" src="images/wiz1.png"/>
-                        <figcaption>The homepage embodies minimalism.</figcaption>
+                    <figure class="wizerati-figure-1 clear-both" >
+                        <img class="wizerati-img-1" src="images/wiz1.png"/>
+                        <figcaption>The homepage is minimal.</figcaption>
                     </figure>
-                    <p>The homepage embodies this philosophy and evolved into its present form after testing tens of different iterations.
-                        The resulting interface relies on stark minimalism for impact rather than flashy logos, effects or complicated features - and its form feels somehow <em>inevitable</em>. Indeed this is my personal definition of a high quality user interface - it "feels inevitable". Watching users operate such an interface is great fun - and is conspicuous by the absence of pauses and questions; users know almost intuitively what to do.
+                    <p>The homepage evolved into its present form after testing tens of different variations.
+                        The resulting interface relies on minimalism for impact rather than flashy logos, effects or complicated features - and its form feels inevitable. Indeed this is my personal definition of a high quality user interface - it "feels inevitable". Watching users operate such an interface is great fun - and is conspicuous by the absence of pauses and questions; users know almost intuitively what to do.
                     </p>
-                    <figure id="wizerati-figure-2" class="clear-both" >
-                        <img id="wizerati-img-4" src="images/wiz5.png"/>
-                        <figcaption>Additional affordances on touch-based devices reduce perceived latency.</figcaption>
+                    <figure class="wizerati-figure-1a clear-both" >
+                        <img class="wizerati-img-1a" src="images/wiz9.png"/>
+                        <figcaption>A single HTTP request delivers the entire application. Font resources are listed as separate requests in this view but do not involve additional HTTP requests.</figcaption>
                     </figure>
-                    <p>Web applications have a reputation for being more sluggish than their native counterparts. This application attempts to buck that trend. The entire web application - CSS, fonts, imagery, JavaScript and markup - is
+                    <p>Web applications have a reputation for being sluggish when compared to their native counterparts. This application attempts to buck that trend. The entire web application - CSS, fonts, imagery, JavaScript and markup - is
                         delivered in a single compressed HTTP response (or two responses in the currently deployed developmental version for debugging reasons). The application uses a single image (excluding images in search results) - an SVG for the logo - and even this is encoded directly into the page.
                         The result is an application that is significantly quicker over high latency networks and that loads, under optimal network conditions, in less than one second.
                     </p>
-                    <figure id="wizerati-figure-3" class="clear-both" >
-                        <img id="wizerati-img-2" src="images/wiz8.png"/>
-                        <figcaption>The user interface is responsive to screen dimensions - both small...</figcaption>
+                    <figure class="wizerati-figure-1 clear-both" >
+                        <img class="wizerati-img-1" src="images/wiz5.png"/>
+                        <figcaption>Additional affordances on touch-based devices reduce perceived latency.</figcaption>
                     </figure>
                     <p>
-                        Perceived responsiveness can of course be just as important as the reality. On touch-based devices a "halo" effect is present to confirm the selection of on-screen items,
-                        and avoid doubt about button presses. Importantly this also significantly reduces the perceived latency on devices that have unavoidable delays on 'click' events in web applications.</p>
-                    <figure id="wizerati-figure-2" class="clear-both" >
-                        <img id="wizerati-img-2" src="images/wiz2.png"/>
-                        <figcaption>...and large.</figcaption>
-                    </figure>
-                    <p>Having run a search, clicking or touching a result updates the screen at near native performance thanks to a combination of client-side caching and the use of DOM element double-buffering. Finally - as far as is possible - changes in position and opacity are controlled using hardware-accelerated CSS3 filters and transforms, providing the best possible chance of a sixty frames-per-second user experience.</p>
+                        <em>Perceived</em> responsiveness can of course be just as important as the reality. On touch-based devices a "halo" effect is present to confirm the selection of on-screen items,
+                        and avoid doubt about button presses. Importantly this also significantly reduces the perceived latency on devices that have unavoidable delays on 'click' events in web applications (iOS!).</p>
+                    <p>Having run a search, clicking or touching a result updates the screen at near native performance thanks to a combination of client-side caching and the use of DOM element double-buffering. As far as is possible, changes in position and opacity are controlled using hardware-accelerated CSS3 filters and transforms, providing the best possible chance of a sixty frames-per-second user experience.</p>
                     <p>One of Wizerati's discriminating features is the ability to trivially compare results side-by-side. Take a look at the following video to see how this is achieved:
                     </p>
                     <video id="demo-video" controls="controls" width="400" name="Wizerati result comparison demonstration" src="/movies/wiz.mov"></video>
@@ -87,8 +83,8 @@
                     <p>With an interface reminiscent of a chat application, ICIS Live enables real-time communication of commodity pricing to subscribers.</p>
                     <p>Somewhat unusual in today's world of JavaScript-heavy single-page web applications, this application had to function without JavaScript and involved some clever tricks to ensure it behaved like a system with more client-side logic.</p>
 
-                    <figure id="icis-live-figure-1" class="clear-both" >
-                        <img id="icis-live-img-1" src="images/icis-live-1.png"/>
+                    <figure class="wizerati-figure-1 clear-both" >
+                        <img class="wizerati-img-1" src="images/icis-live-1.png"/>
                         <figcaption>ICIS Live provides real-time commodity pricing updates using web sockets.</figcaption>
                     </figure>
                     <p>The interface for ICIS Live was built using an HTML5 flex-box layout to guarantee the message field remained in the
@@ -106,8 +102,8 @@
                     <p>JustTextGiving, a partnership between JustGiving and
                         Vodafone, enables charitable organisations and members of the general public on behalf of a nominated charity, to accept charitable donations via text message. Users register a code with JustGiving via a web interface. Donations can then be made by sending the code together with an amount (e.g. £5) in an SMS to a five-digit donation number. The donation is then added to the donor's telephone bill.
                     </p>
-                    <figure id="justtextgiving-figure-1" class="clear-both" >
-                        <img id="icis-live-img-1" src="images/justtextgiving-1.png"/>
+                        <figure class="wizerati-figure-1 clear-both" >
+                            <img class="wizerati-img-1" src="images/justtextgiving-1.png"/>
                         <figcaption>Vodafone JustTextGiving brings SMS-based charitable donations to charities of all sizes.</figcaption>
                     </figure>
                     <p>JustTextGiving makes charitable donations faster and simpler, helping thousands of charities raise money for good causes.</p>
