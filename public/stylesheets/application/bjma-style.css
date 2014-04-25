@@ -38,7 +38,7 @@ img {
 #icis-live,
 #justtextgiving {
     box-sizing: border-box;
-    min-height: 676px;
+    min-height: 776px;
     position: relative;
 }
 
@@ -122,8 +122,8 @@ img {
 #wizerati-header h1,
 #icis-live-header h1,
 #justtextgiving-header h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
 }
 
 #wizerati-header p,
