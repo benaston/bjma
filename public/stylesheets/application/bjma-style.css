@@ -36,6 +36,7 @@ img {
 #intro {
     background-image: url('/images/me5.png');
     background-size: cover;
+    background-position: center;
 }
 
 #intro,
