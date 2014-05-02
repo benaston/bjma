@@ -53,17 +53,17 @@ img {
 
 #wizerati {
     background: rgba(0, 158, 225, 1);
-    color: #222;
+    color: whitesmoke;
 }
 
 #icis-live {
     background: rgba(246, 144, 43, 1);
-    color: #111;
+    color: whitesmoke;
 }
 
 #justtextgiving {
     background: rgba(0, 157, 92, 1);
-    color: #222;
+    color: whitesmoke;
 }
 
 #footer {
@@ -127,8 +127,9 @@ img {
 #wizerati-header h1,
 #icis-live-header h1,
 #justtextgiving-header h1 {
-    font-size: 3.2rem;
-    line-height: 3.8rem;
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    font-style: italic;
 }
 
 #wizerati-header p,
