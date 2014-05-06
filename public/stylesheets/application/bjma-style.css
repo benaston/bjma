@@ -128,7 +128,7 @@ img {
 #wizerati-header h1,
 #icis-live-header h1,
 #justtextgiving-header h1 {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     line-height: 4.8rem;
     font-style: italic;
 }
@@ -288,8 +288,8 @@ body {
     }
 
     #intro-header h1 {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
     }
 
     #sub-heading {
@@ -322,5 +322,12 @@ body {
 
     #demo-video {
         width: 200px;
+    }
+
+    #wizerati-header h1,
+    #icis-live-header h1,
+    #justtextgiving-header h1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
     }
 }
