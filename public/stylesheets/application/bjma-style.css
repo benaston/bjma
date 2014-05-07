@@ -33,12 +33,6 @@ img {
     margin-bottom: 18px;
 }
 
-#intro {
-    background-image: url('/images/.png');
-    background-size: cover;
-    background-position: center;
-}
-
 #paper-plane {
     width: 100%;
     float: left;
