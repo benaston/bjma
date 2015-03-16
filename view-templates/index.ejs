@@ -19,95 +19,41 @@
                     <img id="paper-plane" src="/images/paper.png" title="Paper Plane"/>
                 </header>
                 <div id="intro-body">
-                    <p>Hi there! I'm Ben Aston, and I am a web technologist based in London, UK.</p>
+                    <h2>Writing</h2>
+                    <ul class="blog-posts">
+                        <li><a href="https://medium.com/@benastontweet/mixins-in-javascript-700ec81f5e5c?source=your-stories">Mixins in JavaScript</a></li>
+                        <li><a href="https://medium.com/@benastontweet/implementing-inheritance-in-javascript-2c933d6a70e7?source=your-stories">Implementing Inheritance in JavaScript</a></li>
+                        <li><a href="https://medium.com/@benastontweet/this-in-javascript-28f077cfe852?source=your-stories">"this" in JavaScript</a></li>
+                        <li><a href="https://medium.com/@benastontweet/closures-in-javascript-ee82ddc0e37c?source=your-stories">Closures in JavaScript</a></li>
+                        <li><a href="https://medium.com/@benastontweet/javascript-inheritance-42d2216e9cf1?source=your-stories">JavaScript Inheritance</a></li>
+                        <li><a href="https://medium.com/@benastontweet/an-intervention-4535d835e836?source=your-stories">An Intervention</a></li>
+                    </ul>
 
-                    <p>My principal area of interest is using object-oriented JavaScript, HTML5 and CSS3 to develop highly cohesive, loosely coupled applications for the web. My background is skewed towards software engineering and I have a great deal of experience with C# and object-oriented design. I take a deep interest in the software development process itself and, increasingly, user experience design.</p>
+                    <h2>Open Source</h2>
+                    <ul class="open-source">
+                        <li><a href="https://github.com/benaston/NFeature">NFeature</a></li>
+                        <li><a href="https://github.com/benaston/Taskr">Taskr</a></li>
+                        <li><a href="https://github.com/benaston/NState">NState</a></li>
+                        <li><a href="https://github.com/benaston/event-api">EventAPI</a></li>
+                        <li><a href="https://github.com/benaston/mixx">Mixx</a></li>
+                    </ul>
 
-                    <p>Examples of my .NET work, <a href="https://github.com/benaston/NState">NState</a> and <a href="https://github.com/benaston/NFeature">NFeature</a> can be found on both <a href="https://github.com/benaston">GitHub</a> and
-                        <a href="http://nuget.org/profiles/benaston">NuGet</a>. An implementation in C# of the distributed election "bully" algorithm can be found <a href="https://github.com/benaston/Taskr">here</a>.</p>
+                    <h2>Commercial Projects</h2>
+                    <ul class="open-source">
+                        <li>HSBC HTML5 FX Platform</li>
+                        <li>ICIS Live Realtime Commodity Prices</li>
+                        <li>ICIS Darwin Editorial System</li>
+                        <li>JustGiving/Vodafone JustTextGiving</li>
+                        <li>NHS Go Platform</li>
+                        <li>Traffic England</li>
+                        <li>Intelligence Report Tracking Database (British Army)</li>
+                    </ul>
 
-                    <p>For JavaScript and user experience design, my current pet-project <a href="https://github.com/benaston/w">Wizerati</a> is a good example. A work-in-progress single-page web application, Wizerati
-                        can be found online at <a href="http://www.wizerati.com">www.wizerati.com</a>.</p>
-
-                    <p>Further details on some of the projects I have delivered can be found below.</p>
-                    <div id="down-arrow">&#xf103;</div>
                 </div>
 
             </div>
         </section>
-        <section id="wizerati">
-            <div id="wizerati-content">
-                <header id="wizerati-header">
-                    <h1>Wizerati</h1>
-                    <p>A search engine for IT contracts and contractors.</p>
-                </header>
-                <div id="wizerati-body" class="clear-both">
-                    <p>This work-in-progress application aims to improve upon the incumbents by being faster and more efficient to use.</p>
-                    <figure class="wizerati-figure-1 clear-both" >
-                        <img class="wizerati-img-1" src="images/wiz1.png"/>
-                        <figcaption>The homepage is minimal.</figcaption>
-                    </figure>
-                    <p>The homepage evolved into its present form after testing tens of different variations.
-                        The resulting interface relies on minimalism for impact rather than flashy logos, effects or complicated features. Its form feels inevitable, and this is also my personal benchmark for a high quality user interface. Watching users operate such an interface is great fun - and is conspicuous by the absence of pauses and questions; users know almost intuitively what to do.
-                    </p>
-                    <figure class="wizerati-figure-1a clear-both" >
-                        <img class="wizerati-img-1a" src="images/wiz9.png"/>
-                        <figcaption>A single HTTP request delivers the entire application. Font resources are listed as separate requests in this view but do not involve additional HTTP requests.</figcaption>
-                    </figure>
-                    <p>Web applications have a reputation for being sluggish when compared to their native counterparts. This application attempts to buck that trend. The entire web application - CSS, fonts, imagery, JavaScript and markup - is
-                        delivered in a single compressed HTTP response (or two responses in the currently deployed developmental version for debugging reasons). The application uses a single image (excluding images in search results) - an SVG for the logo - and even this is encoded directly into the page.
-                        The result is an application that is significantly quicker over high latency networks. Under optimal network conditions the application loads in less than one second.
-                    </p>
-                    <figure class="wizerati-figure-1 clear-both" >
-                        <img class="wizerati-img-1" src="images/wiz5.png"/>
-                        <figcaption>Additional affordances on touch-based devices reduce perceived latency.</figcaption>
-                    </figure>
-                    <p>
-                        <em>Perceived</em> responsiveness can of course be just as important as the reality. On touch-based devices a "halo" effect is present to confirm the selection of on-screen items,
-                        and avoid doubt about button presses. Importantly this also significantly reduces the perceived latency on devices that have unavoidable delays on 'click' events in web applications (iOS!).</p>
-                    <p>Having run a search, clicking or touching a result updates the screen at near native performance thanks to a combination of client-side caching and the use of DOM element double-buffering. As far as is possible, changes in position and opacity are controlled using hardware-accelerated CSS3 filters and transforms, providing the best possible chance of a sixty frames-per-second user experience.</p>
-                    <p>One of Wizerati's discriminating features is the ability to trivially compare results side-by-side. Take a look at the following video to see how this is achieved:
-                    </p>
-                    <video id="demo-video" controls="controls" width="400" name="Wizerati result comparison demonstration" src="/movies/wiz.mov"></video>
-                </div>
-            </div>
-        </section><section id="icis-live">
-            <div id="icis-live-content">
-                <header id="icis-live-header">
-                    <h1>ICIS Live</h1>
-                    <p>Real-time commodity pricing alerts.</p>
-                </header>
-                <div id="icis-live-body" class="clear-both">
-                    <p>With an interface reminiscent of a chat application, ICIS Live enables real-time communication of commodity pricing to subscribers.</p>
-                    <p>Somewhat unusual in today's world of JavaScript-heavy single-page web applications, this application had to function without JavaScript and involved some clever tricks to ensure it behaved like a system with more client-side logic.</p>
-
-                    <figure class="wizerati-figure-1 clear-both" >
-                        <img class="wizerati-img-1" src="images/icis-live-1.png"/>
-                        <figcaption>ICIS Live provides real-time commodity pricing updates using web sockets.</figcaption>
-                    </figure>
-                    <p>The interface for ICIS Live was built using an HTML5 flex-box layout to guarantee the message field remained in the
-                        view-port regardless of window size. A text-based filter function enables users to rapidly find the correct "channel" associated with the relevant commodity to communicate from. URL fragment identifiers are used to ensure the chat history position remained correct when sending messages.</p>
-                    <p>Behind the scenes, messages are delivered instantly to around twenty-thousand subscribers using a TCP socket cloud.</p>
-                </div>
-            </div>
-        </section><section id="justtextgiving">
-            <div id="justtextgiving-content">
-                <header id="justtextgiving-header">
-                    <h1>Vodafone JustText&shy;Giving</h1>
-                    <p>Online and SMS-based charitable donations.</p>
-                </header>
-                <div id="justtextgiving-body" class="clear-both">
-                    <p>JustTextGiving, a partnership between JustGiving and
-                        Vodafone, enables charitable organisations and members of the general public on behalf of a nominated charity, to accept charitable donations via text message. Users register a code with JustGiving via a web interface. Donations can then be made by sending the code together with an amount (e.g. £5) in an SMS to a five-digit donation number. The donation is then added to the donor's telephone bill.
-                    </p>
-                        <figure class="wizerati-figure-1 clear-both" >
-                            <img class="wizerati-img-1" src="images/justtextgiving-1.png"/>
-                        <figcaption>Vodafone JustTextGiving brings SMS-based charitable donations to charities of all sizes.</figcaption>
-                    </figure>
-                    <p>JustTextGiving makes charitable donations faster and simpler, helping thousands of charities raise money for good causes.</p>
-                </div>
-            </div>
-        </section>
+    
     </main>
     <footer id="footer">@@footer</footer>
 </div>
@@ -119,27 +65,6 @@
 
     ga('create', 'UA-8203792-3', 'bj.ma');
     ga('send', 'pageview');
-
-
-</script>
-
-<script>
-    var myApp = myApp || {};
-
-    (function(app) {
-        function MyClass() {
-            if(!(this instanceof MyClass)) {
-                return new MyClass();
-            }
-
-            var self = this;
-
-            this.
-
-            init();
-        }
-    }(myApp))
-
 </script>
 </body>
 </html>
